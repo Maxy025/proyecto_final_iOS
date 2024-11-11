@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		FB8F5A9F2CDE70440019475A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5A9E2CDE70440019475A /* AppDelegate.swift */; };
 		FB8F5AA12CDE70440019475A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5AA02CDE70440019475A /* SceneDelegate.swift */; };
-		FB8F5AA32CDE70440019475A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5AA22CDE70440019475A /* ViewController.swift */; };
+		FB8F5AA32CDE70440019475A /* ListaPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5AA22CDE70440019475A /* ListaPokemonViewController.swift */; };
 		FB8F5AA62CDE70440019475A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FB8F5AA52CDE70440019475A /* Base */; };
 		FB8F5AA82CDE70450019475A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB8F5AA72CDE70450019475A /* Assets.xcassets */; };
 		FB8F5AAB2CDE70450019475A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FB8F5AAA2CDE70450019475A /* Base */; };
 		FB8F5AB62CDE70450019475A /* proyecto_final_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5AB52CDE70450019475A /* proyecto_final_iosTests.swift */; };
 		FB8F5AC02CDE70450019475A /* proyecto_final_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5ABF2CDE70450019475A /* proyecto_final_iosUITests.swift */; };
 		FB8F5AC22CDE70450019475A /* proyecto_final_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5AC12CDE70450019475A /* proyecto_final_iosUITestsLaunchTests.swift */; };
+		FBFA59662CE275E000F1B726 /* ManagerPokemones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA59652CE275E000F1B726 /* ManagerPokemones.swift */; };
+		FBFA596B2CE2768800F1B726 /* PokemonD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA596A2CE2768800F1B726 /* PokemonD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		FB8F5A9B2CDE70440019475A /* proyecto_final_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyecto_final_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8F5A9E2CDE70440019475A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB8F5AA02CDE70440019475A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB8F5AA22CDE70440019475A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB8F5AA22CDE70440019475A /* ListaPokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPokemonViewController.swift; sourceTree = "<group>"; };
 		FB8F5AA52CDE70440019475A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB8F5AA72CDE70450019475A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB8F5AAA2CDE70450019475A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		FB8F5ABB2CDE70450019475A /* proyecto_final_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proyecto_final_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8F5ABF2CDE70450019475A /* proyecto_final_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proyecto_final_iosUITests.swift; sourceTree = "<group>"; };
 		FB8F5AC12CDE70450019475A /* proyecto_final_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proyecto_final_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBFA59652CE275E000F1B726 /* ManagerPokemones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerPokemones.swift; sourceTree = "<group>"; };
+		FBFA596A2CE2768800F1B726 /* PokemonD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,15 @@
 		FB8F5A9D2CDE70440019475A /* proyecto_final_ios */ = {
 			isa = PBXGroup;
 			children = (
+				FBFA59672CE2764A00F1B726 /* Modelos */,
 				FB8F5A9E2CDE70440019475A /* AppDelegate.swift */,
 				FB8F5AA02CDE70440019475A /* SceneDelegate.swift */,
-				FB8F5AA22CDE70440019475A /* ViewController.swift */,
+				FB8F5AA22CDE70440019475A /* ListaPokemonViewController.swift */,
 				FB8F5AA42CDE70440019475A /* Main.storyboard */,
 				FB8F5AA72CDE70450019475A /* Assets.xcassets */,
 				FB8F5AA92CDE70450019475A /* LaunchScreen.storyboard */,
 				FB8F5AAC2CDE70450019475A /* Info.plist */,
+				FBFA59652CE275E000F1B726 /* ManagerPokemones.swift */,
 			);
 			path = proyecto_final_ios;
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				FB8F5AC12CDE70450019475A /* proyecto_final_iosUITestsLaunchTests.swift */,
 			);
 			path = proyecto_final_iosUITests;
+			sourceTree = "<group>";
+		};
+		FBFA59672CE2764A00F1B726 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				FBFA596A2CE2768800F1B726 /* PokemonD.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB8F5AA32CDE70440019475A /* ViewController.swift in Sources */,
+				FB8F5AA32CDE70440019475A /* ListaPokemonViewController.swift in Sources */,
+				FBFA59662CE275E000F1B726 /* ManagerPokemones.swift in Sources */,
+				FBFA596B2CE2768800F1B726 /* PokemonD.swift in Sources */,
 				FB8F5A9F2CDE70440019475A /* AppDelegate.swift in Sources */,
 				FB8F5AA12CDE70440019475A /* SceneDelegate.swift in Sources */,
 			);
