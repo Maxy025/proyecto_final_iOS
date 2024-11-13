@@ -18,6 +18,11 @@ class ListaPokemonViewController: UIViewController {
         super.viewDidLoad()
         tabla_pokemones.delegate = self
         tabla_pokemones.dataSource = self
+        PokeApi().getData() { pokemon in print(pokemon)
+            for pokemon in pokemon{
+                print(pokemon.name)
+            }
+        }
     }
 }
 //Codigo tablas

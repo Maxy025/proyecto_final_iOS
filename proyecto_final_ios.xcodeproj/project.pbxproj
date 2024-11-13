@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB5C4B4E2CE50E0B008F4DFF /* ManegadorDePokemones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C4B4D2CE50E0B008F4DFF /* ManegadorDePokemones.swift */; };
+		FB5C4B522CE51A40008F4DFF /* PokemonSeleccionado.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C4B512CE51A40008F4DFF /* PokemonSeleccionado.swift */; };
 		FB8F5A9F2CDE70440019475A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5A9E2CDE70440019475A /* AppDelegate.swift */; };
 		FB8F5AA12CDE70440019475A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5AA02CDE70440019475A /* SceneDelegate.swift */; };
 		FB8F5AA32CDE70440019475A /* ListaPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5AA22CDE70440019475A /* ListaPokemonViewController.swift */; };
@@ -17,7 +19,6 @@
 		FB8F5AC02CDE70450019475A /* proyecto_final_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5ABF2CDE70450019475A /* proyecto_final_iosUITests.swift */; };
 		FB8F5AC22CDE70450019475A /* proyecto_final_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5AC12CDE70450019475A /* proyecto_final_iosUITestsLaunchTests.swift */; };
 		FBFA59662CE275E000F1B726 /* ManagerPokemones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA59652CE275E000F1B726 /* ManagerPokemones.swift */; };
-		FBFA596B2CE2768800F1B726 /* PokemonD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA596A2CE2768800F1B726 /* PokemonD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB5C4B4D2CE50E0B008F4DFF /* ManegadorDePokemones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManegadorDePokemones.swift; sourceTree = "<group>"; };
+		FB5C4B512CE51A40008F4DFF /* PokemonSeleccionado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSeleccionado.swift; sourceTree = "<group>"; };
 		FB8F5A9B2CDE70440019475A /* proyecto_final_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyecto_final_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8F5A9E2CDE70440019475A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB8F5AA02CDE70440019475A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		FB8F5ABF2CDE70450019475A /* proyecto_final_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proyecto_final_iosUITests.swift; sourceTree = "<group>"; };
 		FB8F5AC12CDE70450019475A /* proyecto_final_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proyecto_final_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FBFA59652CE275E000F1B726 /* ManagerPokemones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerPokemones.swift; sourceTree = "<group>"; };
-		FBFA596A2CE2768800F1B726 /* PokemonD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				FB8F5AA92CDE70450019475A /* LaunchScreen.storyboard */,
 				FB8F5AAC2CDE70450019475A /* Info.plist */,
 				FBFA59652CE275E000F1B726 /* ManagerPokemones.swift */,
+				FB5C4B4D2CE50E0B008F4DFF /* ManegadorDePokemones.swift */,
 			);
 			path = proyecto_final_ios;
 			sourceTree = "<group>";
@@ -136,7 +139,7 @@
 		FBFA59672CE2764A00F1B726 /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
-				FBFA596A2CE2768800F1B726 /* PokemonD.swift */,
+				FB5C4B512CE51A40008F4DFF /* PokemonSeleccionado.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -273,8 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB8F5AA32CDE70440019475A /* ListaPokemonViewController.swift in Sources */,
+				FB5C4B4E2CE50E0B008F4DFF /* ManegadorDePokemones.swift in Sources */,
+				FB5C4B522CE51A40008F4DFF /* PokemonSeleccionado.swift in Sources */,
 				FBFA59662CE275E000F1B726 /* ManagerPokemones.swift in Sources */,
-				FBFA596B2CE2768800F1B726 /* PokemonD.swift in Sources */,
 				FB8F5A9F2CDE70440019475A /* AppDelegate.swift in Sources */,
 				FB8F5AA12CDE70440019475A /* SceneDelegate.swift in Sources */,
 			);
