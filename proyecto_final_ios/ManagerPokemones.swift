@@ -5,30 +5,66 @@
 //  Created by alumno on 11/11/24.
 //
 
+//
+//  PokemonManager.swift
+//  Pokedex
+//
+//  Created by marco rodriguez on 13/06/22.
+//
+
 import Foundation
 
-struct Pokemon : Codable{
-    var results: [PokemonInfo]
+protocol pokemonManagerDelegado {
+    func mostrarListaPokemon(lista: [Datos])
 }
 
-struct PokemonInfo : Codable, Identifiable  {
-    let id = UUID()
-    var name: String
-    var url: String
-}
-
-class PokeApi  {
-    func getData(completar:@escaping ([PokemonInfo]) -> ()) {
-        guard let url = URL(string: "https://pokeapi.co/api/v2/pokemon?limit=151") else { return }
+struct PokemonManager {
+    var delegado: pokemonManagerDelegado?
+    
+    func verPokemon() {
+        let urlString = "https://pokedex-bb36f.firebaseio.com/pokemon.json"
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let data = data else { return }
+        if let url = URL(string: urlString) {
+            let session = URLSession(configuration: .default)
             
-            let listaPokemon = try! JSONDecoder().decode(Pokemon.self, from: data)
-            
-            DispatchQueue.main.async {
-                completar(listaPokemon.results)
+            let tarea = session.dataTask(with: url) { datos, respuesta, error in
+                if error != nil {
+                    print("Error al obtener datos de la API: ",error?.localizedDescription)
+                }
+                
+                if let datosSeguros = datos?.parseData(quitarString: "null,"){
+                    if let listaPokemon = self.parsearJSON(datosPokemon: datosSeguros){
+                        print("Lista pokemon: ", listaPokemon)
+                        
+                        delegado?.mostrarListaPokemon(lista: listaPokemon)
+                    }
+                }
             }
-        }.resume()
+            
+            tarea.resume()
+        }
+    }
+    
+    func parsearJSON(datosPokemon: Data) -> [Datos]? {
+        let decodificador = JSONDecoder()
+        do{
+            let datosDecodificados = try decodificador.decode([Datos].self, from: datosPokemon)
+            
+            return datosDecodificados
+            
+        }catch {
+            print("Error al decodificar los datos: ", error.localizedDescription)
+            return nil
+        }
+    }
+}
+
+
+extension Data {
+    func parseData(quitarString palabra: String) -> Data? {
+        let dataAsString = String(data: self, encoding: .utf8)
+        let parseDataString = dataAsString?.replacingOccurrences(of: palabra, with: "")
+        guard let data = parseDataString?.data(using: .utf8) else { return nil }
+        return data
     }
 }

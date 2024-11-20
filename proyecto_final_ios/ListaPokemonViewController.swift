@@ -13,16 +13,26 @@ class ListaPokemonViewController: UIViewController {
     @IBOutlet weak var barra_buscadora_pokemones: UISearchBar!
     @IBOutlet weak var tabla_pokemones: UITableView!
     
+    var pokemonManager = PokemonManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tabla_pokemones.register(UINib(nibName: "CeldaPokemonTableViewCell", bundle: nil), forCellReuseIdentifier: "celda")
+        
+        pokemonManager.delegado = self
+        
         tabla_pokemones.delegate = self
         tabla_pokemones.dataSource = self
-        PokeApi().getData() { pokemon in print(pokemon)
-            for pokemon in pokemon{
-                print(pokemon.name)
-            }
+        
+        //Mostramos la lista de los pokemones
+        pokemonManager.verPokemon()
+            
         }
+    }
+//Pokemon delegado
+extension ListaPokemonViewController: pokemonManagerDelegado{
+    func mostrarListaPokemon(lista: [Datos]) {
     }
 }
 //Codigo tablas
@@ -32,8 +42,12 @@ extension ListaPokemonViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tabla_pokemones.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
-        celda.textLabel?.text = "Gardevoir"
+        let celda = tabla_pokemones.dequeueReusableCell(withIdentifier: "celda", for: indexPath) as! CeldaPokemonTableViewCell
+        celda.nombrePokemon.text = "Gardevoir"
+        celda.ataquePokemon.text = "55"
+        celda.defensaPokemon.text = "39"
+        
+        celda.imagenPokemon.image = UIImage(named:"282")
         return celda
         
     }
