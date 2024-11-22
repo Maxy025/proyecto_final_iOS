@@ -37,6 +37,8 @@ struct PokemonManager {
                         print("Lista pokemon: ", listaPokemon)
                         
                         delegado?.mostrarListaPokemon(lista: listaPokemon)
+                        
+                        
                     }
                 }
             }

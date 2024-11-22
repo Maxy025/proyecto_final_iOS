@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB5C4B522CE51A40008F4DFF /* PokemonSeleccionado.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C4B512CE51A40008F4DFF /* PokemonSeleccionado.swift */; };
+		FB8B19A32CF0E90800581A1E /* DatosPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B19A22CF0E90800581A1E /* DatosPokemonViewController.swift */; };
 		FB8F5A9F2CDE70440019475A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5A9E2CDE70440019475A /* AppDelegate.swift */; };
 		FB8F5AA12CDE70440019475A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5AA02CDE70440019475A /* SceneDelegate.swift */; };
 		FB8F5AA32CDE70440019475A /* ListaPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5AA22CDE70440019475A /* ListaPokemonViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		FB5C4B512CE51A40008F4DFF /* PokemonSeleccionado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSeleccionado.swift; sourceTree = "<group>"; };
+		FB8B19A22CF0E90800581A1E /* DatosPokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosPokemonViewController.swift; sourceTree = "<group>"; };
 		FB8F5A9B2CDE70440019475A /* proyecto_final_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyecto_final_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8F5A9E2CDE70440019475A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB8F5AA02CDE70440019475A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				FBFA59652CE275E000F1B726 /* ManagerPokemones.swift */,
 				FBCE2D4B2CEE4FCE0048CAFB /* CeldaPokemonTableViewCell.swift */,
 				FBCE2D4C2CEE4FCE0048CAFB /* CeldaPokemonTableViewCell.xib */,
+				FB8B19A22CF0E90800581A1E /* DatosPokemonViewController.swift */,
 			);
 			path = proyecto_final_ios;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				FB5C4B522CE51A40008F4DFF /* PokemonSeleccionado.swift in Sources */,
 				FBFA59662CE275E000F1B726 /* ManagerPokemones.swift in Sources */,
 				FBCE2D4E2CEE4FCE0048CAFB /* CeldaPokemonTableViewCell.swift in Sources */,
+				FB8B19A32CF0E90800581A1E /* DatosPokemonViewController.swift in Sources */,
 				FB8F5A9F2CDE70440019475A /* AppDelegate.swift in Sources */,
 				FB8F5AA12CDE70440019475A /* SceneDelegate.swift in Sources */,
 				FBCE2D482CEE440D0048CAFB /* Datos.swift in Sources */,

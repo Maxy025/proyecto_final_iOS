@@ -19,7 +19,7 @@
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ngZ-zf-D6d">
                         <rect key="frame" x="10" y="0.0" width="300" height="180.33333333333334"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="282" translatesAutoresizingMaskIntoConstraints="NO" id="pE7-Ws-RaL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pE7-Ws-RaL">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="3B7-Yr-BAG"/>
@@ -75,7 +75,4 @@
             <point key="canvasLocation" x="-24.427480916030532" y="10.211267605633804"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="282" width="475" height="475"/>
-    </resources>
 </document>
