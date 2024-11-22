@@ -78,7 +78,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bU2-S9-2kM">
                                 <rect key="frame" x="20" y="133" width="353" height="645"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="282" translatesAutoresizingMaskIntoConstraints="NO" id="LNn-bj-Z4v">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LNn-bj-Z4v">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="300"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="QqM-te-Vji"/>
@@ -169,7 +169,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="282" width="475" height="475"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
