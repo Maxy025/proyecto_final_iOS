@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB47C2AC2CF10C8D006AB378 /* Movimientos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47C2AB2CF10C8D006AB378 /* Movimientos.swift */; };
 		FB5C4B522CE51A40008F4DFF /* PokemonSeleccionado.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C4B512CE51A40008F4DFF /* PokemonSeleccionado.swift */; };
 		FB8B19A32CF0E90800581A1E /* DatosPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B19A22CF0E90800581A1E /* DatosPokemonViewController.swift */; };
 		FB8F5A9F2CDE70440019475A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F5A9E2CDE70440019475A /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB47C2AB2CF10C8D006AB378 /* Movimientos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movimientos.swift; sourceTree = "<group>"; };
 		FB5C4B512CE51A40008F4DFF /* PokemonSeleccionado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSeleccionado.swift; sourceTree = "<group>"; };
 		FB8B19A22CF0E90800581A1E /* DatosPokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosPokemonViewController.swift; sourceTree = "<group>"; };
 		FB8F5A9B2CDE70440019475A /* proyecto_final_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyecto_final_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				FBCE2D472CEE440D0048CAFB /* Datos.swift */,
+				FB47C2AB2CF10C8D006AB378 /* Movimientos.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				FB8F5AA32CDE70440019475A /* ListaPokemonViewController.swift in Sources */,
 				FB5C4B522CE51A40008F4DFF /* PokemonSeleccionado.swift in Sources */,
 				FBFA59662CE275E000F1B726 /* ManagerPokemones.swift in Sources */,
+				FB47C2AC2CF10C8D006AB378 /* Movimientos.swift in Sources */,
 				FBCE2D4E2CEE4FCE0048CAFB /* CeldaPokemonTableViewCell.swift in Sources */,
 				FB8B19A32CF0E90800581A1E /* DatosPokemonViewController.swift in Sources */,
 				FB8F5A9F2CDE70440019475A /* AppDelegate.swift in Sources */,

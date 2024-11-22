@@ -33,7 +33,6 @@ class ListaPokemonViewController: UIViewController {
         //Mostramos la lista de los pokemones
         pokemonManager.verPokemon()
         
-        pokemon_filtro_busqueda = pokemones_array
         }
     }
 
@@ -62,7 +61,7 @@ extension ListaPokemonViewController: pokemonManagerDelegado{
         pokemones_array = lista
         
         DispatchQueue.main.async {
-            self.pokemon_filtro_busqueda = self.pokemones_array
+            self.pokemon_filtro_busqueda = lista
             self.tabla_pokemones.reloadData()
         }
     }
