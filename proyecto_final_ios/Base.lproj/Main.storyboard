@@ -8,37 +8,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Lista De Movimeintos View Controller-->
+        <!--Movimientos-->
         <scene sceneID="aQp-m8-mIa">
             <objects>
                 <viewController id="8bb-Fc-62t" customClass="ListaDeMovimeintosViewController" customModule="proyecto_final_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ko-9G-tKi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wb3-6n-pKc">
-                                <rect key="frame" x="0.0" y="72" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="8bb-Fc-62t" id="Ii3-07-cM7"/>
-                                </connections>
-                            </searchBar>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ofu-iP-Ney"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kce-fu-usc"/>
+                    <navigationItem key="navigationItem" title="Movimientos" id="kce-fu-usc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZN-w8-3jS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-976" y="554"/>
+            <point key="canvasLocation" x="-976.33587786259534" y="553.52112676056345"/>
         </scene>
-        <!--Item-->
+        <!--Movimientos-->
         <scene sceneID="sSV-r7-Ok2">
             <objects>
                 <navigationController id="vMr-mC-zvx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="RVD-tq-4vY"/>
+                    <tabBarItem key="tabBarItem" title="Movimientos" id="RVD-tq-4vY">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bJh-Z0-nb2">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -70,11 +62,13 @@
             </objects>
             <point key="canvasLocation" x="44" y="-873"/>
         </scene>
-        <!--Item-->
+        <!--Pokedex-->
         <scene sceneID="mqI-Z4-hBL">
             <objects>
                 <navigationController id="cvv-jf-zjv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Zo1-XA-rg3"/>
+                    <tabBarItem key="tabBarItem" title="Pokedex" id="Zo1-XA-rg3">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1zr-w8-wjc">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -94,14 +88,30 @@
                     <view key="view" contentMode="scaleToFill" id="kuw-yB-r9A">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pokédex_logo" translatesAutoresizingMaskIntoConstraints="NO" id="m9Q-RR-J9a">
+                                <rect key="frame" x="16" y="53" width="361" height="328"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="file-pokeball-png-0" translatesAutoresizingMaskIntoConstraints="NO" id="zU0-Ap-1cx">
+                                <rect key="frame" x="58" y="365" width="276" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bienvenidos" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yYe-bu-fza">
+                                <rect key="frame" x="116" y="646" width="160" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xSv-IT-BBd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.91976243260000001" green="0.31358296279999998" blue="0.32508730009999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="8gZ-L6-SZ3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q5T-UA-C2J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1909" y="-827"/>
+            <point key="canvasLocation" x="1907.6335877862596" y="-827.46478873239437"/>
         </scene>
         <!--Pokedex-->
         <scene sceneID="tne-QT-ifu">
@@ -245,11 +255,13 @@
             </objects>
             <point key="canvasLocation" x="1820.6106870229007" y="3.5211267605633805"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="hGA-My-zmL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tp0-0a-yiV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1IS-2b-ngO"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="1IS-2b-ngO">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="btH-5U-TA0">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -266,6 +278,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Pokédex_logo" width="387" height="140"/>
+        <image name="file-pokeball-png-0" width="300" height="301"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
